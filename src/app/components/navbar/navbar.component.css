@@ -1,0 +1,11 @@
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.img-logo{
+  width: 14%;
+}

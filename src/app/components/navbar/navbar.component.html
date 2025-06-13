@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg bg-light bg-dark">
+  <div class="container-fluid d-flex justify-content-between">
+    <!-- Botón toggle para móviles -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Logo -->
+    <a class="navbar-brand text-white" [routerLink]="['/home']"><img class="img-logo" [src]="logo" alt="logo"></a>
+
+    <!-- Contenido colapsable -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-nav">
+  <li class="nav-item">
+    <a class="nav-link text-white" [routerLink]="['/products']">Productos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#">Team</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#">Projects</a>
+  </li>
+</ul>
+
+      <!-- Ícono carrito -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" [routerLink]="['/signin']">Iniciar sesión</a></li>
+          <li><a class="dropdown-item" [routerLink]="['/signup']">Registrarse</a></li>
+          <li><a class="dropdown-item" href="#">out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

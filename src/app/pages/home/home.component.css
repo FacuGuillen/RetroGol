@@ -1,0 +1,11 @@
+#carouselExampleCaptions {
+  width: 50%;        /* Ancho al 50% */
+  margin: 0 auto;    /* Centrar horizontalmente */
+}
+
+.carousel-inner img {
+  height: 800px;          /* Altura fija, podés cambiar el valor */
+  width: 100%;            /* Que ocupe todo el ancho del carousel */
+  object-fit: cover;      /* Recorta la imagen manteniendo proporción */
+  border-radius: 20px;
+}

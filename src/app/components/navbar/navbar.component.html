@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light bg-dark">
-  <div class="container-fluid d-flex justify-content-between">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
     <!-- Botón toggle para móviles -->
     <button
       class="navbar-toggler"
@@ -13,8 +14,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Logo -->
-    <a class="navbar-brand text-white" [routerLink]="['/home']"><img class="img-logo" [src]="logo" alt="logo"></a>
+    <a class="navbar-brand text-white me-3" [routerLink]="['/home']">
+      <img class="img-logo" [src]="logo" alt="logo" style="height: 50px; width: 75px;">
+    </a>
 
     <!-- Contenido colapsable -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,7 +34,7 @@
 
       <!-- Ícono carrito -->
       <a class="text-reset me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-cart "style="color: white;"></i>
       </a>
 
       <!-- Dropdown -->
@@ -44,7 +46,7 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-user" style="color: white;"></i>
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
           <li><a class="dropdown-item" [routerLink]="['/signin']">Iniciar sesión</a></li>

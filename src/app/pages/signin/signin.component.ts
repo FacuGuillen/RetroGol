@@ -8,5 +8,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './signin.component.css'
 })
 export class SigninComponent {
+  logo : string = 'imgs/logo.png'
 
 }
